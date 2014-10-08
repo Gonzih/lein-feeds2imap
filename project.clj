@@ -1,4 +1,4 @@
-(defproject lein-feeds2imap "0.1.0"
+(defproject lein-feeds2imap "0.1.1"
   :description "Leiningen plugin for feeds2imap.clj"
   :url "https://github.com/Gonzih/lein-feeds2imap"
   :license {:name "Eclipse Public License"
