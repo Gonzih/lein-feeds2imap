@@ -4,4 +4,4 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :eval-in-leiningen true
-  :dependencies [[feeds2imap "0.2.7"]])
+  :dependencies [[feeds2imap "0.2.9"]])
