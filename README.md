@@ -6,9 +6,9 @@ A Leiningen plugin for feeds2imap.clj project.
 
 Use this for user-level plugins:
 
-Put `[lein-feeds2imap "0.1.1"]` into the `:plugins` vector of your
+Put `[lein-feeds2imap "0.1.2"]` into the `:plugins` vector of your
 `:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-lein-feeds2imap 0.1.1`.
+lein-feeds2imap 0.1.2`.
 
 
     $ lein feeds2imap --help
