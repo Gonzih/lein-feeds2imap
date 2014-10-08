@@ -15,6 +15,6 @@ lein-feeds2imap 0.1.5`.
 
 ## License
 
-Copyright © 2013-2014 Max Gonzih gonzih @ gmail.com
+Copyright © 2014 Max Gonzih gonzih @ gmail.com
 
 Distributed under the Eclipse Public License, the same as Clojure.
