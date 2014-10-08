@@ -1,7 +1,7 @@
 (ns leiningen.feeds2imap
   (:require [feeds2imap.core]))
 
-(defn feeds2imap
+(defn  ^:no-project-needed feeds2imap
   "Pull RSS/Atom feeds to your IMAP folders.
 
   Usage: lein feeds2imap <command>
