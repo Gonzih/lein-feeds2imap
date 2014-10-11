@@ -57,7 +57,7 @@ $(document).ready(function () {
             <li>Install <a href="http://leiningen.org/">leiningen</a>
             </li>
             <li>Add [lein-feeds2imap "0.1.6"] to <code>~/.lein/profiles.clj</code> file.</li>
-            <li>Minimalistic <code>~/.lein/profiles.cljs</code> should look like that:</li>
+            <li>Minimalistic <code>~/.lein/profiles.clj</code> should look like that:</li>
         </ul>
 
         <div class="highlight highlight-clojure"><pre><span class="p">{</span><span class="ss">:user</span> <span class="p">{</span><span class="ss">:plugins</span> <span class="p">[[</span><span class="nv">lein-feeds2imap</span> <span class="s">"0.1.6"</span><span class="p">]]}}</span>
@@ -70,7 +70,7 @@ $(document).ready(function () {
             <li>Add url to folder:</li>
 
             <div class="highlight highlight-bash"><pre><span class="c"># This should bootstrap configuration directory
-`~/.config/feeds2imap.cljs/`
+`~/.config/feeds2imap.clj/`
 and most of configuration files.</span>
 lein feeds2imap add Clojure <span class="s1">'http://planet.clojure.in/atom.xml'</span>
             </pre></div>
