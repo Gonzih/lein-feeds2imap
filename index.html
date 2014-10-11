@@ -1,97 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=640">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<link rel="stylesheet" href="stylesheets/core.css" media="screen">
+<link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
+<script type="text/javascript" src="javascripts/modernizr.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
         $('#main_content').headsmart()
-      })
-    </script>
-    <title>Feed 2 IMAP by Gonzih</title>
-  </head>
+        })
+</script>
+<title>Feeds 2 IMAP by Gonzih</title>
+</head>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/Gonzih/lein-feeds2imap">View on GitHub</a>
-    <div class="shell">
+<body>
+<a id="forkme_banner" href="https://github.com/Gonzih/lein-feeds2imap">View on GitHub</a>
+<div class="shell">
 
-      <header>
+    <header>
         <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Feed 2 IMAP</h1>
-            <h2>Read your RSS/Atom feeds using just email client.</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
+            <span class="ribbon-inner">
+                <h1>Feeds 2 IMAP</h1>
+                <h2>Read your RSS/Atom feeds using just email client.</h2>
+            </span>
+            <span class="left-tail"></span>
+            <span class="right-tail"></span>
         </span>
-      </header>
+    </header>
 
-      <section id="downloads">
+    <section id="downloads">
         <span class="inner">
-          <a href="https://github.com/Gonzih/lein-feeds2imap/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Gonzih/lein-feeds2imap/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+            <a href="https://github.com/Gonzih/lein-feeds2imap/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Gonzih/lein-feeds2imap/tarball/master" class="tgz"><em>download</em> .TGZ</a>
         </span>
-      </section>
+    </section>
 
 
-      <span class="banner-fix"></span>
+    <span class="banner-fix"></span>
 
 
-      <section id="main_content">
+    <section id="main_content">
+        <h2>
+            <a href="https://www.eclipse.org/legal/epl-v10.html"><img src="https://camo.githubusercontent.com/abf24e4845a7f0721ff08b2a8284ded5d9cfdefa/687474703a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d45504c2d626c75652e7376673f7374796c653d666c6174" alt="License" data-canonical-src="http://img.shields.io/badge/license-EPL-blue.svg?style=flat" style="max-width:100%;"></a>
+            <a href="https://travis-ci.org/Gonzih/feeds2imap.clj"><img src="https://camo.githubusercontent.com/1d5f17b575fe0a509fa61f6864f44176d52837ea/68747470733a2f2f7472617669732d63692e6f72672f476f6e7a69682f666565647332696d61702e636c6a2e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/Gonzih/feeds2imap.clj.png?branch=master" style="max-width:100%;"></a>
+            <a href="https://jarkeeper.com/Gonzih/feeds2imap.clj"><img src="https://camo.githubusercontent.com/a9a7cc13be365fb59df6a843a66483f3db832894/687474703a2f2f6a61726b65657065722e636f6d2f476f6e7a69682f666565647332696d61702e636c6a2f7374617475732e706e67" alt="Dependencies Status" data-canonical-src="http://jarkeeper.com/Gonzih/feeds2imap.clj/status.png" style="max-width:100%;"></a>
+        </h2>
+        <h3><a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+        <ul>
+            <li>Install <a href="http://leiningen.org/">leiningen</a>
+            </li>
+            <li>Add [lein-feeds2imap "0.1.6"] to <code>~/.lein/profiles.clj</code> file.</li>
+            <li>Minimalistic <code>~/.lein/profiles.cljs</code> should look like that:</li>
+        </ul>
+
+        <div class="highlight highlight-clojure"><pre><span class="p">{</span><span class="ss">:user</span> <span class="p">{</span><span class="ss">:plugins</span> <span class="p">[[</span><span class="nv">lein-feeds2imap</span> <span class="s">"0.1.6"</span><span class="p">]]}}</span>
+        </pre></div>
+
         <h3>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+            <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
-<ul>
-<li>Install <a href="http://leiningen.org/">leiningen</a>
-</li>
-<li>Add [lein-feeds2imap "0.1.6"] to <code>~/.lein/profiles.clj</code> file.</li>
-<li>Minimalistic <code>~/.lein/profiles.cljs</code> should look like that:</li>
-</ul>
+        <ul>
+            <li>Add url to folder:</li>
 
-<div class="highlight highlight-clojure"><pre><span class="p">{</span><span class="ss">:user</span> <span class="p">{</span><span class="ss">:plugins</span> <span class="p">[[</span><span class="nv">lein-feeds2imap</span> <span class="s">"0.1.6"</span><span class="p">]]}}</span>
-</pre></div>
-
-<h3>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
-
-<div class="highlight highlight-bash"><pre><span class="c"># This should bootstrap configuration directory `~/.config/feeds2imap.cljs/` and most of configuration files.</span>
+            <div class="highlight highlight-bash"><pre><span class="c"># This should bootstrap configuration directory
+`~/.config/feeds2imap.cljs/`
+and most of configuration files.</span>
 lein feeds2imap add Clojure <span class="s1">'http://planet.clojure.in/atom.xml'</span>
-</pre></div>
+            </pre></div>
 
-<p>Configure your imap account (take a look at [example file]<a href="https://github.com/Gonzih/feeds2imap.clj/blob/master/imap.clj.example">https://github.com/Gonzih/feeds2imap.clj/blob/master/imap.clj.example</a>))</p>
+            <li>Configure your imap account (take a look at <a target="_blank" href="https://github.com/Gonzih/feeds2imap.clj/blob/master/imap.clj.example">example file</a>)</li>
 
-<p>Run it</p>
+            <li>Run it:</li>
 
-<div class="highlight highlight-bash"><pre>lein feeds2imap pull
+            <div class="highlight highlight-bash"><pre>lein feeds2imap pull
 <span class="c">#or</span>
 lein feeds2imap auto
-</pre></div>
+            </pre></div>
 
-<p>For more information check out help <code>lein feeds2imap --help</code>.</p>
-      </section>
+            <li>For more information check out help <code>lein feeds2imap --help</code>.</li>
+        </ul>
+    </section>
 
-      <footer>
+    <footer>
         <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/Gonzih">Gonzih</a> can be found on <a href="https://github.com/Gonzih/lein-feeds2imap">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
+            <span class="ribbon-inner">
+                <p>this project by <a href="https://github.com/Gonzih">Gonzih</a> can be found on <a href="https://github.com/Gonzih/lein-feeds2imap">GitHub</a></p>
+            </span>
+            <span class="left-tail"></span>
+            <span class="right-tail"></span>
         </span>
         <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
         <span class="octocat"></span>
-      </footer>
+    </footer>
 
-    </div>
+</div>
 
-    
-  </body>
+
+</body>
 </html>
