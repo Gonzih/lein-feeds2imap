@@ -15,6 +15,10 @@ lein-feeds2imap version`.
 
     $ lein feeds2imap --help
 
+## Upgrading from 0.1.+ version
+
+* Since feeds2imap version 0.3.0 format of cache changed, please delete your existing `~/.config/feeds2imap.clj/read-items.clj` file in case of any issues
+
 ## License
 
 Copyright © 2014 Max Gonzih gonzih @ gmail.com
