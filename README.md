@@ -1,4 +1,4 @@
-# lein-feeds2imap
+# lein-feeds2imap[ ![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/Gonzih/lein-feeds2imap/blob/master/LICENSE.md) [![Dependencies Status](http://jarkeeper.com/Gonzih/lein-feeds2imap/status.svg)](https://jarkeeper.com/Gonzih/lein-feeds2imap) [![Downloads](https://jarkeeper.com/Gonzih/lein-feeds2imap/downloads.svg)](https://jarkeeper.com/Gonzih/lein-feeds2imap)
 
 A Leiningen plugin for feeds2imap.clj project.
 
@@ -21,6 +21,6 @@ lein-feeds2imap version`.
 
 ## License
 
-Copyright © 2014 Max Gonzih gonzih @ gmail.com
+Copyright © 2013-2016 Max Gonzih gonzih @ gmail.com
 
-Distributed under the Eclipse Public License, the same as Clojure.
+Distributed under the MIT license.
