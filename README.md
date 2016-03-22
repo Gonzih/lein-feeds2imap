@@ -2,7 +2,7 @@
 
 A Leiningen plugin for feeds2imap.clj project.
 
-[![Clojars Project](http://clojars.org/lein-feeds2imap/latest-version.svg)](http://clojars.org/lein-feeds2imap)
+[![Clojars Project](https://img.shields.io/clojars/v/lein-feeds2imap.svg)](http://clojars.org/lein-feeds2imap)
 
 ## Usage
 
