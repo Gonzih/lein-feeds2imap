@@ -20,4 +20,5 @@
 
     GPG commands require FEEDS_ENC_RECIPIENT env var to be set to the email address of the pub key that should be used."
   [_ & args]
-  (apply feeds2imap.core/-main args))
+  (eval-in-project {:dependencies '[[org.clojure/clojure "1.9.0-RC2"]]}
+                   '(apply feeds2imap.core/-main args)))
